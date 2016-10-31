@@ -82,6 +82,7 @@ public class StandardDeckTest {
 			for (PlayingCard shuffledCard : shuffledCards) {
 				if (preshuffledCard.equals(shuffledCard)) {
 					containsSameCard = true;
+					break;
 				}
 			}
 

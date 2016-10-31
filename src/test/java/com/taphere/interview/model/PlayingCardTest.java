@@ -64,6 +64,10 @@ public class PlayingCardTest {
 		// Test overridden equals(Object o) method
 		assertEquals(pc1, new PlayingCard(PlayingCard.Rank.Ace, PlayingCard.Suit.Spades));
 		assertNotEquals(pc1, new PlayingCard(PlayingCard.Rank.Ten, PlayingCard.Suit.Diamonds));
+		
+		// Test overridden hashCode() method
+		assertEquals(new PlayingCard(PlayingCard.Rank.Ace, PlayingCard.Suit.Spades).hashCode(), pc1.hashCode());
+		assertNotEquals(new PlayingCard(PlayingCard.Rank.Two, PlayingCard.Suit.Spades).hashCode(), pc1.hashCode());
 	}
 
 	@Test
