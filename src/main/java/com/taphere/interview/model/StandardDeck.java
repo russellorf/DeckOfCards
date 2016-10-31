@@ -37,7 +37,7 @@ import java.util.Set;
  */
 public class StandardDeck {
 
-	private Random rand = new Random();
+	private static final Random rand = new Random();
 
 	private Set<PlayingCard> deck = new LinkedHashSet<>();
 
